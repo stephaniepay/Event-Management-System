@@ -1,0 +1,77 @@
+.orders-by-month h4 {
+    background-color: #6094cc;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.order-detail {
+    background-color: #f8f9fa;
+    border-left: 5px solid #6094cc;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    border-radius: 5px;
+    display: block;
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.order-detail a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.order-detail a span:last-child:after {
+    content: "";
+    margin-right: 0;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.order-detail a span {
+    white-space: nowrap;
+    margin-right: 12px;
+}
+
+.order-detail:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.orders-by-month ul {
+    padding-left: 12px;
+    list-style-type: none;
+}
+
+@media (max-width: 768px) {
+    .recent-orders h1 {
+        font-size: 1.5rem;
+    }
+
+    .orders-by-month h4 {
+        font-size: 1rem;
+    }
+
+    .order-detail {
+        padding: 5px;
+    }
+
+    .order-detail div {
+        margin-bottom: 0.25rem;
+    }
+}

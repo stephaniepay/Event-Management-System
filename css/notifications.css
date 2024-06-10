@@ -1,0 +1,41 @@
+.mark-as-read-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 26px;
+    padding: 0;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    border: 0px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.mark-as-read-btn i {
+    color: #ffffff;
+    width: 18px;
+    height: 18px;
+    padding-top: 2px;
+}
+
+.mark-as-read-btn:hover {
+    background-color: #ffffff;
+}
+
+.mark-as-read-btn:hover i {
+    color: #388E3C;
+}
+
+.nav-link .badge {
+    position: relative;
+    top: -9px;
+    right: 3px;
+}
+
+.tooltip-inner {
+    background-color: #333;
+    color: #fff;
+    font-size: 0.8rem;
+}
