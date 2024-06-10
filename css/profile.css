@@ -1,0 +1,188 @@
+/* USER PROFILE */
+
+.dashboard-container {
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container {
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn.dashboard-btn-link {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn.dashboard-btn-link:hover {
+    background-color: #0056b3;
+}
+
+.profile-button-list .list-group-item {
+
+    transition: background-color 0.3s ease;
+}
+
+.profile-button-list .list-group-item:hover {
+    background-color: #e2e6ea;
+}
+
+
+.voted-card {
+    width: 16rem;
+    height: 28rem;
+}
+
+.voted-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.voted-card-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+
+.voted-card-text {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.back-profile-btn a.btn {
+    font-weight: bold;
+    color: #495057;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.back-profile-btn a.btn i {
+    margin-right: 5px;
+}
+
+
+
+
+
+/* ADMIN PROFILE */
+
+.user-details, .admin-metrics, .user-metrics, .organizer-metrics, .recent-orders, .new-users-list, .order-detail, .orders-list {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.admin-metrics, .user-metrics, .organizer-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.metrics-card {
+    display: inline-block;
+    flex: 1 1 calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.metrics-card:nth-child(2n) {
+    margin-right: 0;
+}
+
+
+.metrics-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.metrics-info {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.metrics-info strong {
+    display: block;
+    font-size: 20px;
+}
+
+.order-detail, .new-user-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.admin-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.metrics-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.metrics-card-link:nth-child(2n) {
+    margin-right: 0;
+}
+
+.metrics-card:hover, .metrics-card-link:hover {
+    transform: translateY(-5px);
+    text-decoration: none;
+}
+
+
+
+/* ORGANIZER PROFILE */
+
+.user-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.user-email {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+.btn-edit-profile {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    border: 1px solid black;
+    transition: transform 0.3s ease;
+
+}
+
+.btn-edit-profile:hover {
+    background-color: #abb1b7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: #ffffff;
+}

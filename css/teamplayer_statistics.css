@@ -1,0 +1,155 @@
+.stats-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 132px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.stats-card h5 {
+    text-align: center;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.stats-int {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.stats-name {
+    font-size: 1.7rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.legend {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.legend-item i {
+    margin-right: 5px;
+}
+
+.form-select {
+    display: inline-block;
+    width: auto;
+}
+
+
+
+
+.total-players-card {
+    background-color: #5cb85c;
+    color: rgb(248, 248, 248);
+}
+
+.active-sessions-card {
+    background-color: #d9534f;
+    color: rgb(248, 248, 248);
+}
+
+.most-popular-player-card {
+    background-color: #f0ad4e;
+    color: rgb(248, 248, 248);
+}
+
+.most-active-player-card {
+    background-color: #5bc0de;
+    color: rgb(248, 248, 248);
+}
+
+
+
+
+
+.teamplayers-table-section {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .stats-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        min-height: 150px;
+    }
+
+    .stats-card-container {
+        flex-wrap: wrap;
+    }
+
+    .form-select {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .team-players-table, .team-players-table thead, .team-players-table tbody, .team-players-table th, .team-players-table td, .team-players-table tr {
+        display: block;
+    }
+
+    .team-players-table thead {
+        display: none;
+    }
+
+    .team-players-table tr {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+    }
+
+    .team-players-table>tbody>tr:nth-child(odd)>td,
+    .team-players-table>tbody>tr:nth-child(even)>td {
+        background-color: #fff;
+    }
+
+    .team-players-table td {
+        border: none;
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .team-players-table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-size: 1em;
+        color: #333;
+    }
+
+    .legend {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}

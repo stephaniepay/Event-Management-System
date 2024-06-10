@@ -1,0 +1,12 @@
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table th:not(.message), .table td:not(.message) {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.table th.message, .table td.message {
+    width: auto;
+}

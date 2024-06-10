@@ -1,0 +1,44 @@
+.auth-background {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.animation-bg-container {
+    position: relative;
+    background-color: rgb(15, 15, 15);
+    height: 320px;
+}
+
+.sports-animation-container {
+    height: 80vh;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.login-card, .register-card {
+    margin: auto;
+    margin-top: -70px;
+    background: hsla(0, 0%, 100%, 0.4);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    max-width: 60%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.login-card-body, .register-card-body {
+    padding: 3rem;
+}
+
+.login-card:hover, .register-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
